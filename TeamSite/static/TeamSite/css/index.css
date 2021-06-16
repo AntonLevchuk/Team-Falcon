@@ -1,0 +1,40 @@
+@font-face{
+    font-family: Oswald-Light;
+    font-style: normal;
+    font-weight: light;
+    src: local('Oswald-Light'), url('/static/TeamSite/fonts/Oswald/static/Oswald-Light.ttf') format('opentype');
+}
+
+@font-face{
+    font-family: Oswald-Bold;
+    font-style: normal;
+    font-weight: bold;
+    src: local('Oswald-Bold'), url('/static/TeamSite/fonts/Oswald/static/Oswald-Bold.ttf') format('opentype');
+}
+
+body{
+    font-size: 20px;
+    line-height: 36px;
+    font-family: Oswald-Light;
+    font-size: 24px;
+    font-height: 36px;
+    /*-webkit-text-stroke: .1px #DC143C;*/
+    background-image: url(https://i.pinimg.com/originals/70/31/1e/70311e33f550a83fbee04ccb8e82bc04.gif);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fff;
+}
+
+.text_first{
+    font-family: Oswald-Bold;
+}
+
+.text_second, .text_third, .text_fourth, text_fifth{
+    font-size: 24px;
+    font-height: 36px;
+    margin-bottom: .5em;
+    text-index: 20px;
+}
+
+
+

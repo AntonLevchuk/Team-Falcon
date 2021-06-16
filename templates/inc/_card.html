@@ -1,0 +1,30 @@
+<div class="carousel-item active">
+    <div class="row">
+        {% if item.pk == 2 %}
+        <div class="offset-sm-2 col-sm-3 col-md-2"><img src="https://assets.faceit-cdn.net/avatars/cf505bdf-67ca-44b3-b039-d39a3dded0b0_1551021724411.jpg" width="260"  class="img-fluid rounded-circle d-block m-auto pb-3" alt="{{ item.full_name }}"></div>
+
+            {% elif item.pk == 3 %}
+            <div class="offset-sm-2 col-sm-3 col-md-2"><img src="https://assets.faceit-cdn.net/avatars/e7141b45-eef3-4aad-afe6-5e87149df2dd_1610472913398.jpg" width="260"  class="img-fluid rounded-circle d-block m-auto pb-3" alt="{{ item.full_name }}"></div>
+
+                {% elif item.pk == 4 %}
+                <div class="offset-sm-2 col-sm-3 col-md-2"><img src="https://assets.faceit-cdn.net/avatars/3c2ae18a-7425-48d3-a1f9-eeed40a771d3_1574798324117.jpg" width="260"  class="img-fluid rounded-circle d-block m-auto pb-3" alt="{{ item.full_name }}"></div>
+
+                    {% elif item.pk == 5 %}
+                    <div class="offset-sm-2 col-sm-3 col-md-2"><img src="https://assets.faceit-cdn.net/avatars/f9b6426e-f633-4e37-a8af-1e96f298d46d_1610649645602.jpg" width="260"  class="img-fluid rounded-circle d-block m-auto pb-3" alt="{{ item.full_name }}"></div>
+
+                        {% else  %}
+                        <div class="offset-sm-2 col-sm-3 col-md-2"><img src="https://assets.faceit-cdn.net/avatars/1b979225-67f4-47bb-b373-6e18a6d32d31_1586879744947.jpg" width="260"  class="img-fluid rounded-circle d-block m-auto pb-3" alt="{{ item.full_name }}">
+                        </div>
+
+                        {% endif %}
+                        <div class="offset-md-1 col-md-5 col-sm-5">
+                            <div class="review">
+                                <h4 class="card-title">{{ item.full_name }}</h4>
+                                <div class="review-author">
+                                    <p class="card-text">{{ item.content|truncatewords:150 }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+    </div>
+</div>
